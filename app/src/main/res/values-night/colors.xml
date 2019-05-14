@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryLighter">@color/teal900Light</color>
+    <color name="colorPrimary">@color/teal900</color>
+    <color name="colorPrimaryDarker">@color/teal900Dark</color>
+    <color name="onPrimary">@color/white</color>
+
+    <color name="colorAccentLighter">@color/amber600Light</color>
+    <color name="colorAccent">#ffa726</color>
+    <color name="colorAccentDarker">@color/amber600Dark</color>
+    <color name="onAccent">@color/black100</color>
+
+    <color name="onSurfaceColor">@color/grey500</color>
+    <color name="onSurfaceDisabled">@color/black60</color>
+
+
+    <color name="onBackgroundColor">@color/black60</color>
+
+    <color name="dividerColor">@color/black60</color>
+    <color name="backgroundColor">#212121</color>
+
+</resources>

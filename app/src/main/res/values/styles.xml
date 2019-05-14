@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarker</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+    </style>
+
+
+    <style name="StartButton" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:background">
+            ?attr/selectableItemBackgroundBorderless
+        </item>
+        <item name="android:drawableTint">
+            @drawable/on_surface_color_selector
+        </item>
+        <item name="android:textColor">@drawable/on_surface_color_selector</item>
+    </style>
+
+    <style name="icon_on_surface">
+        <item name="android:tint">
+            @drawable/on_surface_color_selector
+        </item>
+    </style>
+
+
+    <style name="smallText" parent="Base.TextAppearance.AppCompat.Body1">
+
+        <!--<item name="android:textColor">@color/colorAccent</item>-->
+
+    </style>
+
+    <style name="mediumText" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="largeText" parent="Base.TextAppearance.AppCompat.Display1"></style>
+
+
+</resources>

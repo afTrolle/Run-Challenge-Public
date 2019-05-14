@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.home.HomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toolbarExstetion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_user_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarExstetion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarExstetion">
+
+        <LinearLayout
+            android:id="@+id/home_previous_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp">
+
+                <ImageView
+                    android:id="@+id/home_previous_trophy"
+                    style="@style/icon_on_surface"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/trophy" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/home_previous_placement_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/dividerColor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp">
+
+                <ImageView
+                    style="@style/icon_on_surface"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/ic_run" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/home_previous_average_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/dividerColor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp">
+
+                <ImageView
+                    style="@style/icon_on_surface"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/ic_timer" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/home_previous_finished_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="60dp"
+
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/home_user_profile_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="2dp"
+                android:src="@drawable/ic_account"
+                app:tint="@color/onAccent" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/home_user_name"
+        style="@style/TextAppearance.AppCompat.Medium.Inverse"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:elevation="4dp"
+        android:paddingBottom="92dp"
+        android:textColor="@color/onPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/home_setting_button"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_settings_20px"
+        android:tint="@color/onPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- TODO chain in a smart way! #chaining type -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/home_button_challenge"
+                style="@style/StartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:drawableStart="@drawable/ic_run"
+                android:text="@string/ranked"
+                app:layout_constraintEnd_toStartOf="@+id/home_button_challenge_friend"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/home_button_history"
+                style="@style/StartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_baseline_history"
+                android:enabled="false"
+                android:text="@string/history"
+                app:layout_constraintStart_toStartOf="@+id/home_button_challenge"
+                app:layout_constraintTop_toBottomOf="@+id/home_button_challenge" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/home_button_challenge_friend"
+                style="@style/StartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="16dp"
+                android:drawableStart="@drawable/ic_games_matches_white"
+                android:text="@string/challenge_friend"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/home_button_challenge"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/home_button_inbox"
+                style="@style/StartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_inbox"
+                android:text="@string/inbox"
+                app:layout_constraintStart_toStartOf="@+id/home_button_challenge_friend"
+                app:layout_constraintTop_toBottomOf="@+id/home_button_challenge_friend" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--<androidx.cardview.widget.CardView--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_marginStart="16dp"--><!--android:layout_marginEnd="16dp"--><!--android:layout_marginBottom="16dp"--><!--app:cardCornerRadius="4dp"--><!--app:layout_constraintBottom_toBottomOf="parent"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintStart_toStartOf="parent">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal"--><!--&gt;-->
+
+    <!--<LinearLayout--><!--android:gravity="center"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_weight="1"--><!--android:orientation="vertical">-->
+
+
+    <!--<androidx.appcompat.widget.AppCompatButton--><!--android:id="@+id/home_button_challenge"--><!--style="@style/StartButton"-->
+
+    <!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:drawableStart="@drawable/ic_run"--><!--android:text="@string/ranked" />-->
+
+    <!--<androidx.appcompat.widget.AppCompatButton--><!--android:id="@+id/home_button_history"--><!--style="@style/StartButton"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:drawableStart="@drawable/ic_baseline_history"--><!--android:enabled="false"--><!--android:text="@string/history" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:layout_width="0dp"--><!--android:gravity="center"--><!--android:layout_height="wrap_content"--><!--android:layout_weight="1"--><!--android:orientation="vertical">-->
+
+
+    <!--<androidx.appcompat.widget.AppCompatButton--><!--android:id="@+id/home_button_challenge_friend"--><!--style="@style/StartButton"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"-->
+
+    <!--android:drawableStart="@drawable/ic_games_matches_white"--><!--android:text="@string/challenge_friend" />-->
+
+    <!--<androidx.appcompat.widget.AppCompatButton--><!--android:id="@+id/home_button_inbox"--><!--style="@style/StartButton"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:drawableStart="@drawable/ic_inbox"--><!--android:text="@string/inbox"/>--><!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</androidx.cardview.widget.CardView>-->

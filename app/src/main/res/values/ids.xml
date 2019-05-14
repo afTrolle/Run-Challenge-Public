@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+       IDs for Play games services (google)  -->
+    <string name="app_id">937147765253</string>
+    <string name="client_id">937147765253-ob8613iquk6m5kcfee6tl3i57muogpen.apps.googleusercontent.com</string>
+
+</resources>

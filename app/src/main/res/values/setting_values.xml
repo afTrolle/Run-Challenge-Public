@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferences_distance_list_entries">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+
+    <string-array name="preferences_distance_list_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="preferences_speed_metric_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!--continue from preferences_speed_metric_values-->
+    <string-array name="preferences_speed_imperial_values">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+
+    <string-array name="preferences_speed_metric">
+        <item>kilometer/hour</item>
+        <item>meter/sec</item>
+        <item>min/kilometer</item>
+    </string-array>
+
+    <string-array name="preferences_speed_imperial">
+        <item>mile/hour</item>
+        <item>feet/sec</item>
+        <item>min/mile</item>
+    </string-array>
+
+    <string-array name="preferences_audio_volume_list_entries">
+        <item>100%</item>
+        <item>75%</item>
+        <item>50%</item>
+        <item>25%</item>
+    </string-array>
+
+    <string-array name="preferences_audio_volume_list_values">
+        <item>1</item>
+        <item>0.75</item>
+        <item>0.5</item>
+        <item>0.25</item>
+    </string-array>
+
+</resources>

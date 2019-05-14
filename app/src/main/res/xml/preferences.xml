@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sample="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:key="pref_category_units"
+        android:title="@string/pref_category_unit_title"
+        app:iconSpaceReserved="false">
+        <!-- Your mile pace is 12.5 minutes per mile. -->
+        <!-- Speed or enableChannel pace -->
+        <!-- m/sec-->
+        <!-- Yard/sec-->
+
+        <!-- Distance -->
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/preferences_distance_list_entries"
+            android:entryValues="@array/preferences_distance_list_values"
+            android:key="pref_measurement_system"
+            android:summary="@string/pref_unit_format_summary"
+            android:title="@string/pref_unit_format_title"
+            app:iconSpaceReserved="false" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/preferences_speed_metric"
+            android:entryValues="@array/preferences_speed_metric_values"
+            android:key="pref_speed_or_pace"
+            android:summary="@string/pref_speed_summary"
+            android:title="@string/pref_speed_title"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_category_audio"
+        android:title="@string/pref_audio_category_title"
+        app:iconSpaceReserved="false">
+        <!-- Audio -->
+
+        <!-- Maybe female or male speaker change -->
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_audio_enabled"
+            android:singleLineTitle="true"
+            android:title="@string/pref_audio_feedback_title"
+            app:iconSpaceReserved="false" />
+
+        <!-- Volume -->
+        <com.pavelsikun.seekbarpreference.SeekBarPreferenceCompat
+            android:defaultValue="100"
+            android:key="pref_audio_volume"
+            android:summary="@string/pref_audio_summary"
+            android:title="@string/pref_audio_volume"
+            app:iconSpaceReserved="false"
+            sample:msbp_dialogEnabled="false"
+            sample:msbp_interval="1"
+            sample:msbp_maxValue="100"
+            sample:msbp_measurementUnit="%"
+            sample:msbp_minValue="0" />
+
+
+        <!-- Placement FeedBack -->
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="pref_audio_enabled"
+            android:key="pref_placement_audio"
+            android:summary="@string/pref_audio_feedback_placement_summary"
+            android:title="@string/pref_audio_feedback_placement_title"
+            app:iconSpaceReserved="false" />
+
+
+        <!-- use this https://github.com/Gericop/Android-Support-Preference-V7-Fix -->
+        <com.pavelsikun.seekbarpreference.SeekBarPreferenceCompat
+            android:defaultValue="100"
+            android:key="pref_distance_feedback"
+            android:summary="@string/pref_distance_feedback_summary"
+            android:title="@string/pref_distance_feedback_title"
+            app:iconSpaceReserved="false"
+            sample:msbp_dialogEnabled="true"
+            sample:msbp_interval="1"
+            sample:msbp_maxValue="2000"
+            sample:msbp_measurementUnit="@string/pref_distance_beep_measure_unit_metric"
+            sample:msbp_minValue="0" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="pref_category_theme"
+        android:title="@string/pref_theme_category_title"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_auto_manage_theme"
+            android:singleLineTitle="true"
+            android:summary="@string/pref_auto_manage_summary"
+            android:title="@string/pref_auto_manage_theme"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+
+            android:key="pref_always_dark_theme"
+            android:singleLineTitle="true"
+            android:summary="@string/pref_dark_theme_summary"
+            android:title="@string/pref_always_dark_theme"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_category_account"
+        android:title="@string/pref_account_category_title"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="pref_revoke_access"
+            android:summary="@string/pref_summary_sign_out"
+            android:title="@string/pref_sign_out"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="pref_sign_out"
+            android:summary="@string/pref_summary_sign_out"
+            android:title="@string/pref_sign_out"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_category_about"
+        android:title="@string/pref_about_category_title"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="pref_eula"
+            android:title="@string/eula_title"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="pref_about"
+            android:title="@string/pref_about_title"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

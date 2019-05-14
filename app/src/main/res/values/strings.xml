@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">Run challenge</string>
+    <string name="service_description">Game Logic service</string>
+    <string name="channel_id">Run Challenge</string>
+    <string name="channel_name">Run Challenge service</string>
+    <string name="channel_description">background game logic</string>
+    <string name="notification_ticker_text">Run Challenge Service that does game logic background work while running</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="sign_in_other_error">Google Services Sign In error</string>
+    <string name="missing_user_name">User name not found</string>
+    <string name="home_menu_settings">Settings</string>
+    <string name="home_menu_sign_out">Sign out</string>
+
+    <string name="unknown_error">Oh no something went wrong </string>
+
+
+    <!--    Settings Strings -->
+
+    <string name="pref_category_unit_title">Units</string>
+
+    <string name="pref_speed_summary">%s</string>
+    <string name="pref_speed_title">Pace or speed format</string>
+
+    <string name="pref_unit_format_title">Measurement system</string>
+    <string name="pref_unit_format_summary">%s</string>
+
+    <string name="pref_audio_category_title">Audio</string>
+
+    <string name="pref_audio_feedback_title">Audio Feedback</string>
+
+    <string name="pref_audio_feedback_placement_title">Placement Feedback</string>
+    <string name="pref_audio_feedback_placement_summary">Alert you when your placement changed</string>
+
+    <string name="pref_audio_volume">Volume</string>
+    <string name="pref_audio_summary">Loudness of  feedback and effects </string>
+
+    <string name="pref_about_category_title">About</string>
+    <string name="pref_about_title">About us</string>
+
+    <string name="pref_distance_feedback_title">Distance feedback</string>
+    <string name="pref_distance_feedback_summary">Play beep every </string>
+    <string name="pref_distance_feedback_summary_disabled">Disabled</string>
+    <string name="pref_distance_beep_measure_unit_imperial">yards</string>
+    <string name="pref_distance_beep_measure_unit_metric">meters </string>
+
+    <!-- TODO: Old version of code-->
+
+    <string name="error_message_sign_error">Failed to sign in</string>
+    <!-- toolbar Menu Items -->
+    <string name="toolbar_menu_settings_text">Settings</string>
+    <string name="toolbar_menu_sign_out_text">Sign out</string>
+    <string name="player_ready_button_hint">Please Click Ready when you are ready to start</string>
+    <string name="player_ready_button_text">Ready</string>
+    <string name="location_rationale">Location is needed to be able to track your run</string>
+    <string name="location_permission_required">Location permission is required to use this feature</string>
+    <string name="location_settings_incorrect">Need Locations/Gps to be in high accuracy to work</string>
+    <string name="error_title">Error</string>
+    <string name="error_ok">ok</string>
+    <string name="count_down_annoucnemnt">5, 4, 3, 2, 1, Go!</string>
+    <string name="notification_title">Run Challenge</string>
+    <string name="notification_message">game in progress</string>
+    <string name="ticker_text">TBD</string>
+    <string name="location_notice_title_text">Run in progress</string>
+    <string name="finish_time_not_available">-- : -- : --</string>
+    <string name="game_player_disconnected_text">Disconnected</string>
+
+    <string name="awareness_alert_message">Always be aware of your surrounding when using this app</string>
+    <string name="sign_in_hint">Please sign in</string>
+
+
+    <string name="slogan">Challenge other people by competing in real-time.\nbeing the first to run 2 km</string>
+    <string name="accept_licence">Accept</string>
+    <string name="decline_licence">decline</string>
+    <string name="motivation_licence">To use this app End-User License Agreement must be accepted</string>
+    <string name="eula_title">End-User License Agreement</string>
+    <string name="eula_missing">End-user license agreement is missing</string>
+    <string name="ok">ok</string>
+    <string name="about_us">About Us</string>
+    <string name="about_text">      I Alexander af Trolle created Run Challenge for two reasons.\n
+        \n
+        The first reason is I\'m taking a human computer interaction course at Royal Institute of Technology in Stockholm | KTH \n
+        \n
+        The second, I\'ve always wanted to create an app where I could run against other people in real-time. My goals were that I would lose weight through competitive running.\n
+        \n
+        Little did I know that I would spend my most my time at the desk working on the app\n
+        \n
+        I hope you are enjoying the app.
+        \n
+        If you would like to provide any feedback or ideas about improvements please write an review or email</string>
+    <string name="alexander_af_trolle">Alexander af Trolle</string>
+    <string name="email">email</string>
+    <string name="rate">rate</string>
+    <string name="inbox">Inbox</string>
+    <string name="button">Button</string>
+    <string name="challenge_friend">Challenge</string>
+    <string name="ranked">Ranked</string>
+    <string name="history">History</string>
+    <string name="missing_gps_permission">Gps permission is required</string>
+    <string name="error_set_location_settings">Failed to set location setting</string>
+    <string name="double_click_alert_message">Double click exit to exit</string>
+    <string name="exit">Exit</string>
+    <string name="error_start_gps">Falied to start GPS</string>
+    <string name="game_service_failed_to_join_room">Failed to connect to room</string>
+    <string name="game_service_failed_to_fetch_invites">Falied to fetch invites</string>
+    <string name="game_service_failed_to_fetch_players_to_invite">Failed to fetch friends</string>
+    <string name="game_service_failed_to_connect">Failed to connect</string>
+    <string name="game_service_failed_to_invite_players">Failed to invite players</string>
+    <string name="failed_to_resolve_error">Falied to resolve error</string>
+    <string name="failed_to_sign_in">Failed to sign in</string>
+    <string name="pref_account_category_title">Account</string>
+    <string name="pref_sign_out">Sign out</string>
+    <string name="pref_summary_sign_out">revokes application\'s account access</string>
+    <string name="placment_first">1st</string>
+    <string name="placement_second">2nd</string>
+    <string name="placment_third">3rd</string>
+    <string name="placment_fourth">4th</string>
+    <string name="placment_unknown">-</string>
+    <string name="home_previous_game_info_hint">Contains: Information about last game</string>
+    <string name="pref_theme_category_title">Theme</string>
+    <string name="pref_auto_manage_theme">Auto manage mode</string>
+    <string name="pref_auto_manage_summary">Mode based on time of day</string>
+    <string name="pref_always_dark_theme">Night mode</string>
+    <string name="pref_dark_theme_summary">Always in night mode else in day mode</string>
+    <string name="encryption_hand_shake_falied">Encryption handshake failed</string>
+    <string name="game_service_failed_to_send">Connection failed</string>
+    <string name="ready_start_game_button_text">Ready</string>
+    <string name="not_ready_start_game_button_text">Not Ready</string>
+    <string name="gps">GPS</string>
+    <string name="ready">Ready</string>
+    <string name="player_profile_image">player profile image</string>
+    <string name="room_data_missing">Room data is missing</string>
+
+</resources>
